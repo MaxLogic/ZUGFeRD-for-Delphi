@@ -190,6 +190,7 @@ begin
   if isInvoice then
   begin
     // DueDate (BT-9) - cardinality 0..1
+    dueDate := 0;
     dueDateFound := false;
     for paymentTerms in Descriptor.PaymentTermsList do
     begin
